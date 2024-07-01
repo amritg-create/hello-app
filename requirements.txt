@@ -1,6 +1,5 @@
 langchain_community
 langchain_core
 langchain_openai
-langchain.chains
-langchain.chains.combine_documents
+langchain
 
