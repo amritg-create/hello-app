@@ -16,6 +16,7 @@ import uuid
 st.set_page_config(page_title="Your Cisco Earnings Statement Copilot", layout="wide")
 st.title("Your Cisco Earnings Statement Copilot")
 
+import os
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # Set up Chat Memory
