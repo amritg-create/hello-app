@@ -16,6 +16,9 @@ import uuid
 st.set_page_config(page_title="Your Data Science Reference Copilot", layout="wide")
 st.title("Your Data Science Reference Copilot")
 
+import os
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
 
 # Set up Chat Memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
