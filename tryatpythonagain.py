@@ -6,7 +6,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+protobuf==3.19.0
 
 import streamlit as st
 import yaml
