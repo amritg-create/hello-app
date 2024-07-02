@@ -1,4 +1,4 @@
-import pysqlite3
+import pysqlite
 import sys
 from langchain_community.vectorstores import Chroma
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
