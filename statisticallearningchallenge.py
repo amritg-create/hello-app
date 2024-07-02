@@ -16,6 +16,7 @@ import uuid
 st.set_page_config(page_title="Your Data Science Reference Copilot", layout="wide")
 st.title("Your Data Science Reference Copilot")
 
+OPENAI_API_KEY = yaml.safe_load(open('credentials.yml'))['openai']
 
 # Set up Chat Memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
