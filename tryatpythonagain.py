@@ -12,7 +12,6 @@ import streamlit as st
 import yaml
 import uuid
 
-
 # Initialize the Streamlit app
 st.set_page_config(page_title="Your Cisco Earnings Statement Copilot", layout="wide")
 st.title("Your Cisco Earnings Statement Copilot")
