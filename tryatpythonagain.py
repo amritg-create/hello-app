@@ -1,6 +1,5 @@
 import pysqlite3
 import sys
-sys.modules[sqlite3] = sys.modules.pop(pysqlite3)
 from langchain_community.vectorstores import Chroma
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
