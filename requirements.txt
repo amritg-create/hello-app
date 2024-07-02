@@ -1,6 +1,9 @@
 langchain_community
+langchain_community.vectorstores
+langchain_community.chat_message_histories
 langchain_core
 langchain_openai
+langchain.chains
 langchain
 streamlit
 chromadb
