@@ -19,12 +19,6 @@ st.title("Your Data Science Reference Copilot")
 import os
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
-__import__('pysqlite3')
-import sys
-sys.modules('sqlite3') = sys.modules.pop('pysqlite3')
-import sqlite3
-
-
 
 # Set up Chat Memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
