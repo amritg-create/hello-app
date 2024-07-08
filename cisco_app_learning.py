@@ -42,7 +42,7 @@ def create_rag_chain(api_key):
         chunk_size=500,
     )
     vectorstore = Chroma(
-        persist_directory="cisco_earnings_statements_challenge/data/chroma_learning.db",
+        persist_directory="cisco_earnings_statement_challenge/data/chroma_learning.db",
         embedding_function=embedding_function
     )
     
