@@ -24,7 +24,8 @@ st.set_page_config(page_title="Your Cisco Earnings Statement Copilot", layout="w
 st.title("Your Cisco Earnings Statement Copilot")
 
 # Load the API Key securely
-OPENAI_API_KEY = yaml.safe_load(open('credentials.yml'))['openai']
+import os
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 # Set up Chat Memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
