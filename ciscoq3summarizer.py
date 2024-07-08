@@ -1,17 +1,4 @@
 
-# PYTHON FOR GENERATIVE AI COURSE
-# RETRIEVAL-AUGMENTED GENERATION (RAG)
-# ***
-
-# CHALLENGE 1: CREATE A DATA SCIENCE EXPERT USING THE INTRODUCTION TO STATISTICAL LEARNING WITH PYTHON PDF
-
-# DIFFICULTY: BEGINNER
-
-# streamlit run path_to_app.py
-
-"""
-What are the top 3 things needed to do principal component analysis (pca)?
-"""
 
 from langchain_community.vectorstores import Chroma
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
