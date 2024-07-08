@@ -5,3 +5,4 @@ langchain
 streamlit
 chromadb
 protobuf==3.19.0
+sqlite==3.41.2
