@@ -31,8 +31,7 @@ st.set_page_config(page_title="Your Cisco Q3 Earnings Statement Copilot", layout
 st.title("Your Cisco Earnings Copilot")
 
 # Load the API Key securely
-import os
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+OPENAI_API_KEY = yaml.safe_load(open('credentials.yml'))['openai']
 
 # Set up Chat Memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
@@ -49,7 +48,7 @@ def create_rag_chain(api_key):
         chunk_size=500,
     )
     vectorstore = Chroma(
-        persist_directory="solution_01_statistical_learning_pdf/data/chroma_statistical_learning.db",
+        persist_directory= "Cisco_Q3summarizer/data/chroma_cisco_learning.db",
         embedding_function=embedding_function
     )
     
