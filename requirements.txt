@@ -3,5 +3,5 @@ langchain_core
 langchain_openai
 langchain
 streamlit
-chromadb
+chromadb==0.4.0
 protobuf==3.19.0
