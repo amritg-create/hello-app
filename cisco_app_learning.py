@@ -100,7 +100,7 @@ rag_chain = create_rag_chain(OPENAI_API_KEY)
 for msg in msgs.messages:
     st.chat_message(msg.type).write(msg.content)
 
-if question := st.chat_input("Enter your Data Science question here:", key="query_input"):
+if question := st.chat_input("Enter your question here:", key="query_input"):
     with st.spinner("Thinking..."):
         st.chat_message("human").write(question)     
            
