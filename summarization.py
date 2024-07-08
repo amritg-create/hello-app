@@ -11,7 +11,8 @@ from tempfile import NamedTemporaryFile
 import yaml
 
 # Load API Key
-OPENAI_API_KEY = yaml.safe_load(open('credentials.yml'))['openai']
+import os
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 # 1.0 LOAD AND SUMMARIZE FUNCTION
 def load_and_summarize(file, use_template = False):
