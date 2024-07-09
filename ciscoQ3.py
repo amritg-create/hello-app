@@ -150,7 +150,7 @@ def create_rag_chain(api_key):
         api_key=api_key,
         chunk_size=500,
     )
-    vectorstore = Chroma(
+    vectorstore = Chroma.from_documents(docs,
         persist_directory= "Cisco_Q3summarizer/data/chroma_cisco_learning.db",
         embedding_function=embedding_function
     )
