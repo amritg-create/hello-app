@@ -75,12 +75,6 @@ vectorstore = Chroma.from_documents(
     embedding=embedding_function
 )
 
-
-vectorstore = Chroma(
-    persist_directory="Cisco_Q3summarizer/data/chroma_cisco_learning.db",
-    embedding_function=embedding_function
-)
-
 retriever = vectorstore.as_retriever()
 
 retriever
