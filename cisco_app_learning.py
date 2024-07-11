@@ -42,7 +42,8 @@ def create_rag_chain(api_key):
         api_key=api_key,
         chunk_size=500,
     )
-    persist_directory = os.path.join(os.getcwd(), "chroma_learning.db")
+    #persist_directory = os.path.join(os.getcwd(), "chroma_learning.db"
+    persist_directory="cisco_earnings_statements_challenge/data/chroma_learning.db"
     vectorstore = Chroma(
         persist_directory=persist_directory,
         embedding_function=embedding_function
