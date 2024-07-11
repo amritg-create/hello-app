@@ -17,6 +17,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 import streamlit as st
 import yaml
 import uuid
+import os
 
 
 # Initialize the Streamlit app
@@ -41,8 +42,9 @@ def create_rag_chain(api_key):
         api_key=api_key,
         chunk_size=500,
     )
+    persist_directory = os.path.join(os.getcwd(), "chroma_learning.db")
     vectorstore = Chroma(
-        persist_directory="/chroma_learning.db",
+        persist_directory=persist_directory,
         embedding_function=embedding_function
     )
     
