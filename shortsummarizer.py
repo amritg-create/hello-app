@@ -63,7 +63,7 @@ def load_and_summarize(file, use_template = False):
 
 
 # 2.0 STREAMLIT INTERFACE
-st.title("PDF Earnings Call Summarizer")
+st.title("PDF Resume Summarizer")
 
 st.subheader("Upload a PDF Document:")
 uploaded_file = st.file_uploader("Choose a file", type="pdf")
