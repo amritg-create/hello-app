@@ -9,6 +9,7 @@ import streamlit as st
 import os
 from tempfile import NamedTemporaryFile
 import yaml
+pip install pypdf
 
 # Load API Key
 import os
